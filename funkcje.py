@@ -134,8 +134,9 @@ def calculate_propagation_time(file_name):
             row_index = row_index + 1
     print(df)
     df = df.drop(labels=0, axis=0)
-    print(df)
-    print(df['difference_in_minutes'].describe())
+    print(df['difference_in_minutes'].astype(int).describe())
+    print(df['difference_in_minutes'].max(), df['difference_in_minutes'].min())
+    print(df['difference_in_minutes'].mean(), df['difference_in_minutes'].median())
 download_reddit_data('2022, 2, 1', '2022, 2, 3', 'polska')
 
 calculate_propagation_time('2022-2-1_2022-2-3_polskalist.csv')
