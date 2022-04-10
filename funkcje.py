@@ -111,8 +111,9 @@ def calculate_propagation_time(file_name):
     df['difference_in_minutes'] = ''
 
     # take tweet id from each line (starting with row_index = 0) and query twitter API for tweet_fields from this tweet
-    row_index = 2
-    for twitterId in df.iloc[row_index, 6]:
+    row_index = 1
+    for twitterId in df.iloc[1:, 6]:
+        print('idtweeta', twitterId)
         url = f"https://api.twitter.com/2/tweets?ids={twitterId}&tweet.fields={tweet_fields}"
         response = requests.request("GET", url, headers=headers)
 
@@ -129,9 +130,9 @@ def calculate_propagation_time(file_name):
             tweet_date_stamp = int(datetime.strptime(tweet_date, "%Y-%m-%dT%H:%M:%S.%fZ").timestamp())
             df.iloc[row_index, 7] = tweet_date_stamp
             # calculate propagation time in minutes
-            df.iloc[row_index, 8] = (df.iloc[row_index, 3] - df.iloc[row_index, 7]) / 60
+            df.iloc[row_index, 8] = (int(df.iloc[row_index, 3]) - int(df.iloc[row_index, 7])) / 60
             row_index = row_index + 1
-
+    print(df)
 download_reddit_data('2022, 2, 1', '2022, 2, 3', 'polska')
 
 calculate_propagation_time('2022-2-1_2022-2-3_polskalist.csv')
