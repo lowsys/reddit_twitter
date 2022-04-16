@@ -9,7 +9,7 @@ Source of reddit post is Pushshift API which collects doubled and deleted posts.
 Advice:
 Check pushift and twitter API’s limits, on large amount of data you may encounter too many requests error.
 
-Example of use. Find and calculate how fast tweets are shared in subreddit "polska" between first and fourth december 2021:
+Example of use. Find and calculate how fast tweets are shared in subreddit "polska" between first and fourth December 2021:
 download_reddit_data('2021, 12, 1', '2021, 12, 4', 'polska')
 calculate_propagation_time('2021-12-1_2021-12-4_polska_dict.csv')
 time_diff_analyses('propagation_2021-12-1_2021-12-4_polska_dict.csv')
