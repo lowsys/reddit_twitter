@@ -15,13 +15,13 @@ calculate_propagation_time('2021-12-1_2021-12-4_polska_dict.csv')
 time_diff_analyses('propagation_2021-12-1_2021-12-4_polska_dict.csv')
 
 Example output (values in minutes):
-count       8.00
-mean     1362.43
-std      1309.60
-min       141.03
-25%       194.12
-50%      1163.99
-75%      2332.30
+count       8.00, 
+mean     1362.43, 
+std      1309.60, 
+min       141.03, 
+25%       194.12, 
+50%      1163.99, 
+75%      2332.30, 
 max      2980.72
 Name: difference_in_minutes, dtype: object
 
