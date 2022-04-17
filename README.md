@@ -6,8 +6,16 @@ You will get answer with .csv file for even more advanced analyses on tweets in 
 Methodology:
 Source of reddit post is Pushshift API which collects doubled and deleted posts.
 
-Advice:
+Advices:
 Check pushift and twitter API’s limits, on large amount of data you may encounter too many requests error.
+
+Pushsigt API documentation: https://github.com/pushshift/api
+
+New to Pushift? https://www.reddit.com/r/pushshift/comments/bcxguf/new_to_pushshift_read_this_faq/
+
+Twitter API: https://developer.twitter.com/en/docs/twitter-api
+
+Sample use of Twitter API: https://towardsdatascience.com/searching-for-tweets-with-python-f659144b225f
 
 Example of use. Find and calculate how fast tweets are shared in subreddit "polska" between first and fourth December 2021:
 download_reddit_data('2021, 12, 1', '2021, 12, 4', 'polska')
