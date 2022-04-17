@@ -7,7 +7,7 @@ Methodology:
 Source of reddit post is Pushshift API which collects doubled and deleted posts.
 
 Advices:
-Check pushift and twitter API’s limits, on large amount of data you may encounter too many requests error.
+Check Pushift and twitter API’s limits, on large amount of data you may encounter too many requests error.
 
 Pushsigt API documentation: https://github.com/pushshift/api
 
@@ -17,7 +17,7 @@ Twitter API: https://developer.twitter.com/en/docs/twitter-api
 
 Sample use of Twitter API: https://towardsdatascience.com/searching-for-tweets-with-python-f659144b225f
 
-Example of use. Find and calculate how fast tweets are shared in subreddit "polska" between first and fourth December 2021:
+Example of use. Find and calculate how fast tweets are shared in subreddit "polska" between the first and fourth December 2021:
 download_reddit_data('2021, 12, 1', '2021, 12, 4', 'polska')
 
 calculate_propagation_time('2021-12-1_2021-12-4_polska_dict.csv')
@@ -44,5 +44,5 @@ max      2980.72
 Name: difference_in_minutes, dtype: object
 
 Example answer based on example output:
-There were 8 tweets shared subreddit polska. Fastest share took 141.03 minutes, longest - 2980.72 minutes.
+There were 8 tweets shared on subreddit polska. The fastest share took 141.03 minutes, the longest - 2980.72 minutes.
 On average, tweets are shared after 1362.43 minutes and median is 1163.99 minutes.
