@@ -6,7 +6,7 @@ You will get answer with .csv file for even more advanced analyses on tweets in 
 Methodology:
 Source of reddit post is Pushshift API which collects doubled and deleted posts.
 
-Advices:
+Advice:
 Check Pushift and twitter API’s limits, on large amount of data you may encounter too many requests error.
 
 Pushsigt API documentation: https://github.com/pushshift/api
