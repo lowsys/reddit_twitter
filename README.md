@@ -17,7 +17,9 @@ Twitter API: https://developer.twitter.com/en/docs/twitter-api
 
 Sample use of Twitter API: https://towardsdatascience.com/searching-for-tweets-with-python-f659144b225f
 
-Example of use. Find and calculate how fast tweets are shared in subreddit "polska" between the first and fourth December 2021:
+Example of use:
+Find and calculate how fast tweets are shared in subreddit "polska" between the first and fourth December 2021:
+
 download_reddit_data('2021, 12, 1', '2021, 12, 4', 'polska')
 
 calculate_propagation_time('2021-12-1_2021-12-4_polska_dict.csv')
